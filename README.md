@@ -12,4 +12,4 @@ Monitora: Suellen Miranda Amorim
 
 
 O que é o PSET? 
- - Problem set é uma atividade avaliativa com intuido de fazer com que o estdante resolva determinados problemas e aprenda a se familiarizar com os materiais que o curso de sua grde proporciona. 
+ - Problem set é uma atividade avaliativa com intuido de fazer com que o estdante resolva determinados problemas e aprenda a se familiarizar com os materiais que o curso de sua grade proporciona. 
