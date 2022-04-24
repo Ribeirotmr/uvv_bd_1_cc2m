@@ -1,4 +1,4 @@
-/* Após a criação da tabela elmasri no sql power arcthect, vou ao terminal do vitual box criar um usuario do banco de dados do mariabd
+/* Após a criação da tabela elmasri no sql power arcthect, vou ao terminal do vitual box criar um usuario do banco de dados do mariabd */
 
 su - root 
 computacao@raiz 
