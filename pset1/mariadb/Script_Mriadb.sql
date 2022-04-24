@@ -28,7 +28,7 @@ SELECT user FROM mysql.user;
 
 create user thierry identified by '123456';
 
-/* Após eu criar o usuário, vou criar o banco de dados da uvv  dar os devidor privilégios para o meu usuário criado
+/* Após eu criar o usuário, vou criar o banco de dados da uvv  dar os devidor privilégios para o meu usuário criado */
 
 create database uvv;
 
@@ -71,7 +71,7 @@ use uvv;
 
 
 
-/* depois de usar todos os comando, vou criar as tabela com as suas devidas restrições
+/* depois de usar todos os comando, vou criar as tabela com as suas devidas restrições */
 
 
 
@@ -250,7 +250,7 @@ REFERENCES projeto (numero_projeto)
 ON DELETE NO ACTION
 ON UPDATE NO ACTION;
 
-/*Depois de criar todas as tabela vou inserit os devidos dados para cada tipo de tabela.
+/*Depois de criar todas as tabela vou inserit os devidos dados para cada tipo de tabela. */
 
 
 
