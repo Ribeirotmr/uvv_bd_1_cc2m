@@ -1,4 +1,4 @@
-# Este é o  Banco de dados do MariaDB. 
+# Este é o script do Banco de dados do MariaDB. 
 
 Nessa pasta está tudo o que foi pedido no pset1, e algumas imagens das tabelas que foram criadas com seu determinados dados só para ter uma complementação mais ampla do que foi feito nesse primeiro trabalho.
 
