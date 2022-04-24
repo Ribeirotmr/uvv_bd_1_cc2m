@@ -1,4 +1,4 @@
-# PSET1 Da matéria de Sistema de gerenciamento de Banco de Dados 
+# PSET1 Da matéria de Design e desenvolvimento de bancos de dados 
 
 
 
