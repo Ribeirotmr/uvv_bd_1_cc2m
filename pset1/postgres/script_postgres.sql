@@ -11,7 +11,7 @@ psql
 computaco@raiz
  
 
-
+/* Na minha maquina virtual estava dando erro de langpacks para português, então para finalizar o banco de dados decidir optar por deixar na lingua inglesa*/
 create database uvv
       with
       owner = "thierry"
