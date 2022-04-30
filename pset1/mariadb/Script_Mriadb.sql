@@ -341,17 +341,17 @@ VALUES( '88866555576', 20, '0');
 
 
 
-INSERT INTO dependentes( cpf_funcionario, nome_dependente, sexo, data_nascimento, parentesco)
+INSERT INTO dependente( cpf_funcionario, nome_dependente, sexo, data_nascimento, parentesco)
 VALUES( '33344555587', 'Alícia', 'F', '1986-04-05', 'Filha');
-INSERT INTO dependentes( cpf_funcionario, nome_dependente, sexo, data_nascimento, parentesco)
+INSERT INTO dependente( cpf_funcionario, nome_dependente, sexo, data_nascimento, parentesco)
 VALUES( '33344555587', 'Tiago', 'M', '1983-10-25', 'Filho');
-INSERT INTO dependentes( cpf_funcionario, nome_dependente, sexo, data_nascimento, parentesco)
+INSERT INTO dependente( cpf_funcionario, nome_dependente, sexo, data_nascimento, parentesco)
 VALUES( '33344555587', 'Janaína', 'F', '1958-05-03', 'Esposa');
-INSERT INTO dependentes( cpf_funcionario, nome_dependente, sexo, data_nascimento, parentesco)
+INSERT INTO dependente( cpf_funcionario, nome_dependente, sexo, data_nascimento, parentesco)
 VALUES( '98765432168', 'Antonio', 'M', '1942-02-28', 'Marido');
-INSERT INTO dependentes( cpf_funcionario, nome_dependente, sexo, data_nascimento, parentesco)
+INSERT INTO dependente( cpf_funcionario, nome_dependente, sexo, data_nascimento, parentesco)
 VALUES( '12345678966', 'Michael', 'M', '1988-01-04', 'Filho');
-INSERT INTO dependentes( cpf_funcionario, nome_dependente, sexo, data_nascimento, parentesco)
+INSERT INTO dependente( cpf_funcionario, nome_dependente, sexo, data_nascimento, parentesco)
 VALUES( '12345678966', 'Alícia', 'F', '1988-12-30', 'Filha');
-INSERT INTO dependentes( cpf_funcionario, nome_dependente, sexo, data_nascimento, parentesco)
+INSERT INTO dependente( cpf_funcionario, nome_dependente, sexo, data_nascimento, parentesco)
 VALUES( '12345678966', 'Elizabeth', 'F', '1967-05-05', 'Esposa');
