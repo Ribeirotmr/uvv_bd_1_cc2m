@@ -1,4 +1,4 @@
-# PSET1 Da matéria de Design e desenvolvimento de bancos de dados 
+# PSET1 e PSET2 da matéria de Design e desenvolvimento de bancos de dados 
 
 
 
