@@ -12,12 +12,12 @@ select concat(primeiro_nome, nome_meio, ultimo_nome) as nome_completo, data_nasc
 
 -- Questão 04 --
 
-select distinct concat(f1.primeiro_nome, f1.nome_meio, f1.ultimo_nome) as nome_completo, year(current_timestamp())-year(f1.data_nascimento) as idade, f1.salario as salaraio_atual,if(f2.salario >= 35000, f2.salario * 1.15, f2.salario * 1.20) as salario_reajustadofrom funcionario f1
-inner join funcionario f2 on (f1.cpf = f2.cpf);;
+select distinct concat(f1.primeiro_nome, f1.nome_meio, f1.ultimo_nome) as nome_completo, year(current_timestamp())-year(f1.data_nascimento) as idade, f1.salario as salaraio_atual, if(f2.salario >= 35000, f2.salario * 1.15, f2.salario * 1.20) as salario_reajustado from funcionario f1
+inner join funcionario f2 on (f1.cpf = f2.cpf);
 
 -- Questão 05 --
 
-select distinct f1.primeiro_nome as funcionarios, f2.primeiro_nome as gerentes, d.nome_departamento, f1.salario from funcionario f1inner join funcionario f2 on (f1.cpf_supervisor = f2.cpf)inner join departamento d on (f1.numero_departamento = d.numero_departamento)
+select distinct f1.primeiro_nome as funcionarios, f2.primeiro_nome as gerentes, d.nome_departamento, f1.salario from funcionario f1 inner join funcionario f2 on (f1.cpf_supervisor = f2.cpf) inner join departamento d on (f1.numero_departamento = d.numero_departamento)
 order by nome_departamento, salario desc;
 
 -- Questão 06 --
@@ -31,7 +31,7 @@ select concat(f.primeiro_nome, f.nome_meio, f.ultimo_nome) as nome_completo, f.s
 
 -- Questão 08 --
 
-select distinct numero_departamento, trabalha_em.numero_projeto, concat(f.primeiro_nome, f.nome_meio, f.ultimo_nome) as nome_funcionario,horasfrom funcionario as f
+select distinct numero_departamento, trabalha_em.numero_projeto, concat(f.primeiro_nome, f.nome_meio, f.ultimo_nome) as nome_funcionario,horas from funcionario as f
 inner join trabalha_em on f.cpf = trabalha_em.cpf_funcionario order by numero_departamento;
 
 -- Questão 09 --
@@ -44,7 +44,7 @@ select numero_departamento, round (avg(salario),2) as média_salarial from funci
 
 -- Questão 11 --
 
-select concat(f.primeiro_nome,' ', nome_meio,'.',ultimo_nome) as nome_funcionario, projeto.nome_projeto,(trabalha_em.horas * 50) as valor
+select concat(f.primeiro_nome, nome_meio, ultimo_nome) as nome_funcionario, projeto.nome_projeto,(trabalha_em.horas * 50) as valor
 from ((funcionario as f inner join trabalha_em on f.cpf = trabalha_em.cpf_funcionario) inner join projeto on projeto.numero_projeto = trabalha_em.numero_projeto);
 
 -- Questão 12 --
@@ -59,7 +59,7 @@ union
 select distinct concat(d.nome_dependente, f.nome_meio, f.ultimo_nome) as nome, d.sexo, year(current_timestamp())-year(d.data_nascimento) as idade
 from dependente d
 inner join funcionario f on (f.cpf = d.cpf_funcionario)
-order by idade desc
+order by idade desc;
 
 -- Questão 14 --
 
