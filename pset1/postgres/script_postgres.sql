@@ -43,6 +43,7 @@ CREATE TABLE elmasri.funcionario (
                 cpf_supervisor CHAR(11) NOT NULL,
                 numero_departamento INTEGER NOT NULL,
                 CONSTRAINT funcionario_pk PRIMARY KEY (cpf)
+                <img src="postgres01.PNG>
 );
 COMMENT ON TABLE elmasri.funcionario IS 'Tabela que armazena as informações dos funcionários.';
 COMMENT ON COLUMN elmasri.funcionario.cpf IS 'CPF do funcionário. Será a PK da tabela.';
