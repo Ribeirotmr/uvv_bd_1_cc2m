@@ -1,7 +1,7 @@
 -- Questão 01 --
 
 select numero_departamento, round (avg(salario),2) as média_salarial from funcionario group by numero_departamento order by numero_departamento;
-<img src="q1.png">
+
 -- Questão 02 --
 
 select sexo, round (avg(salario),2) as média_salarial from funcionario  group by sexo;
