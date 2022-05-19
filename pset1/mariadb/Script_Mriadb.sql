@@ -17,6 +17,8 @@ show databases;
 +--------------------+
 4 rows in set (0.086 sec)
 
+/* Usei esse código para verificar quais tipo de usuario estão usando o banco de dados */
+
 SELECT user FROM mysql.user;
 +-------------+
 | User        |
@@ -25,6 +27,8 @@ SELECT user FROM mysql.user;
 | mysql       |
 | root        |
 +-------------+
+
+/* depois disso criei o usuario e a senha para poder acessar o banco de dados do mariabd */
 
 create user thierry identified by '123456';
 
@@ -34,6 +38,7 @@ create database uvv;
 
 grant all privileges on uvv.* to thierry;
 
+/* Aqui estou verificando se meu usuario foi criado */
 SELECT user FROM mysql.user;
 +-------------+
 | User        |
@@ -43,6 +48,8 @@ SELECT user FROM mysql.user;
 | mysql       |
 | root        |
 +-------------+
+
+/* Verificando se o anco de dados foi criado e que consta no sgbd */
 
 show databases;
 +--------------------+
@@ -55,7 +62,7 @@ show databases;
 | uvv                |
 +--------------------+
 
-
+/* Entrando no banco de dados */
 
 su - root
 computacao@raiz 
@@ -63,7 +70,7 @@ computacao@raiz
 mysql -u root -p
 computacao@raiz 
 
-
+/* Conectando o meu usuario com o banco de dados */
 system mysql -u thierry -p
 123456
 
@@ -91,6 +98,8 @@ CREATE TABLE funcionario (
                 numero_departamento INT NOT NULL,
                 PRIMARY KEY (cpf)
 );
+
+/* Comentarios da tabela funcionario */
 
 ALTER TABLE funcionario COMMENT 'Tabela que armazena as informações dos funcionários.';
 
@@ -250,12 +259,13 @@ REFERENCES projeto (numero_projeto)
 ON DELETE NO ACTION
 ON UPDATE NO ACTION;
 
-/*Depois de criar todas as tabela vou inserit os devidos dados para cada tipo de tabela. */
+/*Depois de criar todas as tabela vou inserir os devidos dados para cada tabela criada. tiver que fazer uma modificação na quantidade de caractere do endereço */
 
 
 
 INSERT INTO funcionario (cpf, primeiro_nome, nome_meio, ultimo_nome, data_nascimento, endereco, sexo, salario, cpf_supervisor, numero_departamento ) 
 VALUES ('88866555576', 'Jorge', 'E', 'Brito', '1937-11-10','RuadoHorto35,SãoPaulo,SP', 'M', '55000', '88866555576', 1 );
+/* eu tive que inserir jrge priemiro para poder dar continuidade da inserção de dados, já que ele é como se fosse o ``presidente´´ */
 INSERT INTO funcionario (cpf, primeiro_nome, nome_meio, ultimo_nome, data_nascimento, endereco, sexo, salario, cpf_supervisor, numero_departamento ) 
 VALUES ('98765432168', 'Jennifer', 'S', 'Souza', '1941-06-20','AvArthurLima54,SantoAndré,SP', 'F', '43000', '88866555576', 4 );
 INSERT INTO funcionario (cpf, primeiro_nome, nome_meio, ultimo_nome, data_nascimento, endereco, sexo, salario, cpf_supervisor, numero_departamento ) VALUES ('99988777767', 'Alice', 'J', 'Zelaya', '1968-01-19','RuaSouzaLima35,Curitiba,PR', 'F', '25000', '98765432168', 4 );
