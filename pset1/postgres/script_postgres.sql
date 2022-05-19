@@ -1,6 +1,9 @@
+/* Entrando no banco de dados so Postgre pelo terminal */
+
 su - postgres
 postgres 
 
+/* Criando o usuario para poder logar com ele no postgres */
 
 createuser thierry -dPs
 123456
@@ -20,16 +23,20 @@ create database uvv
       allow_connections = true;
 CREATE DATABASE
 
+/* Conecatando o meu usuario com o banco de dados da uvv */
+
 \c uvv thierry;
 123456 
 You are now connected to database "uvv" as user "thierry".
+
+/*criando os esquemas para agrupar objetos no nível e fazer divisões departamentais e altoriazando o meu usuario para */
 
 create schema elmasri authorization thierry;
 
 
 alter user thierry set search_path to elmasri, "\$user', public;
 
-
+/* Criando tabelas */
   
 CREATE TABLE elmasri.funcionario (
                 cpf CHAR(11) NOT NULL,
@@ -181,6 +188,9 @@ NOT DEFERRABLE;
 
 INSERT INTO elmasri.funcionario (cpf, primeiro_nome, nome_meio, ultimo_nome, data_nascimento, endereco, sexo, salario, cpf_supervisor, numero_departamento ) 
 VALUES ('88866555576', 'Jorge', 'E', 'Brito', '1937-11-10','RuadoHorto35,SãoPaulo,SP', 'M', '55000', '88866555576', 1 );
+
+/* eu tive que inserir jrge priemiro para poder dar continuidade da inserção de dados, já que ele é como se fosse o ``presidente´´ */
+
 INSERT INTO elmasri.funcionario (cpf, primeiro_nome, nome_meio, ultimo_nome, data_nascimento, endereco, sexo, salario, cpf_supervisor, numero_departamento ) 
 VALUES ('98765432168', 'Jennifer', 'S', 'Souza', '1941-06-20','AvArthurLima54,SantoAndré,SP', 'F', '43000', '88866555576', 4 );
 INSERT INTO elmasri.funcionario (cpf, primeiro_nome, nome_meio, ultimo_nome, data_nascimento, endereco, sexo, salario, cpf_supervisor, numero_departamento ) VALUES ('99988777767', 'Alice', 'J', 'Zelaya', '1968-01-19','RuaSouzaLima35,Curitiba,PR', 'F', '25000', '98765432168', 4 );
