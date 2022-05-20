@@ -10,7 +10,7 @@ Turma: cc2m
 
 Monitora: Suellen Miranda Amorim
 
-Todo esse pset foi feito através da maquina virtual disponibilizada pelo professor [Abrantes](https://github.com/abrantesasf) 
+Todo esse pset foi feito através da [maquina virtual](https://www.computacaoraiz.com.br/2022/03/17/maquina-virtual-para-o-estudo-de-sistemas-de-gerenciamento-de-bancos-de-dados-db-server/)  disponibilizada pelo professor [Abrantes](https://github.com/abrantesasf) 
 
 O que é o PSET? 
  - Problem set é uma atividade avaliativa com intuido de fazer com que o estdante resolva determinados problemas e aprenda a se familiarizar com os materiais que o curso de sua grade proporciona. 
