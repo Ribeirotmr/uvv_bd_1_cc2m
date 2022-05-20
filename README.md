@@ -2,7 +2,7 @@
 
 
 
-Aluno: [Thierry Martins Ribeiro](github.com/ribeirotmr/uvv_bd_1_cc2m)
+Aluno: [Thierry Martins Ribeiro](https://github.com/Ribeirotmr)
 
 
 Turma: cc2m 
